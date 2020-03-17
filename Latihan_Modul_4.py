@@ -36,8 +36,14 @@ c7 = MhsTIF('Galuh', 5, 'Wonogiri', 245000)
 c8 = MhsTIF('Janto', 23, 'Klaten', 245000)
 c9 = MhsTIF('Hasan', 64, 'Karanganyar', 270000)
 c10 = MhsTIF('Khalid', 29, 'Purwodadi', 265000)
-
 Daftar = [c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10]
+
+#Mencetak nama mahasiswa yg beralamat Klaten
+target = 'Klaten'
+for i in Daftar:
+    if i.kotaTinggal == target:
+        print(i.nama + ' tinggal di '+ target)
+        
 #Mencari data terkecil
 def min(Daftar):
     nama = []
