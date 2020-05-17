@@ -96,11 +96,11 @@ print(count)
 
 ## Analisis Perwaktusn Menggunakan timeit
 from timeit import timeit
-timeit('sqrt(2)', 'from math import sqrt', number=10000)
+print(timeit('sqrt(2)', 'from math import sqrt', number=10000))
 
-timeit('sqrt(2)', 'from math import sqrt', number=100000)
+print(timeit('sqrt(2)', 'from math import sqrt', number=100000))
 
-timeit('sqrt(2)', 'from math import sqrt', number=1000000)
+print(timeit('sqrt(2)', 'from math import sqrt', number=1000000))
 
 print(timeit("1+2")) #waktu untuk menghitung 1+2, diulang 1 juta kali.
 
